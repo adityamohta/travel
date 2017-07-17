@@ -1,0 +1,16 @@
+*.pyc
+*.py~
+.idea/
+accounts/migrations/
+blog/migrations/
+contactus/migrations/
+feedback/migrations/
+newsletter/migrations/
+products/migrations/
+accounts/__pycache__/
+blog/__pycache__/
+contactus/__pycache__/
+feedback/__pycache__/
+newsletter/__pycache__/
+products/__pycache__/
+db.sqlite3
