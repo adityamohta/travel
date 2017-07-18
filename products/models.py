@@ -26,6 +26,8 @@ class Package(models.Model):
     category = models.ManyToManyField(Category, blank=True)     # do we need this field? Not sure...
     created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
 
+    recomm_list = models.TextField(blank=True)
+
     def __str__(self):
         return self.title
 
