@@ -14,3 +14,4 @@ feedback/__pycache__/
 newsletter/__pycache__/
 products/__pycache__/
 db.sqlite3
+travel/settings/local.py
