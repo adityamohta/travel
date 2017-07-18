@@ -1,11 +1,12 @@
 # travel
 
-###Setting up project in local environment.
+### Setting up project in local environment.
 
 1) Create a virtual environment in your directory of choice.
    example - /webapps/travel_app/
 
 ```commandline
+mkdir -p /webapps/travel_app
 cd /webapps/travel_app/
 virtualenv .
 source bin/activate
@@ -15,6 +16,7 @@ pip install -r requirements.txt
 touch travel/settings/local.py
 nano travel/settings/local.py
 ```
+
 2) Add following code in local.py.
 ```python
 from .base import *
@@ -57,6 +59,7 @@ touch /newsletter/migrations/__init__.py
 mkdir /products/migrations
 touch /products/migrations/__init__.py
 ```
+
 4) Make Migrations and then run Migrate.
 
 * pwd - /webapps/travel_app/travel/
