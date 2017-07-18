@@ -9,7 +9,7 @@ class Post(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     slug = models.SlugField()
-    # image relation
+    # TODO 1: think about some image relation
     content = models.TextField()
     draft = models.BooleanField(default=True)
     publish = models.DateField(auto_now=False, auto_now_add=False)

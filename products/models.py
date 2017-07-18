@@ -21,7 +21,7 @@ class Package(models.Model):
     partner = models.ForeignKey(Partner, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     description = models.TextField()
-    # destinations.
+    # TODO 2: some destinations field? think about it.
     price = models.DecimalField(decimal_places=2, max_digits=20)
     category = models.ManyToManyField(Category, blank=True)     # do we need this field? Not sure...
     created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
