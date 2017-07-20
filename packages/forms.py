@@ -18,6 +18,9 @@ class PackageCreateForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(PackageCreateForm, self).__init__(*args, **kwargs)
 
+        self.fields['partner'].widget.attrs['class'] = 'form-control'
+        # self.fields['title'].widget.attrs['placeholder'] = 'Title'
+
         self.fields['title'].widget.attrs['class'] = 'form-control'
         self.fields['title'].widget.attrs['placeholder'] = 'Title'
 

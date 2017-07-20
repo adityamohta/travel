@@ -27,8 +27,18 @@ class Package(models.Model):
     category = models.ManyToManyField(Category, blank=True)     # do we need this field? Not sure...
     created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
 
+    class Meta:
+        ordering = ['-title']
+
     def __str__(self):
         return self.title
 
-    class Meta:
-        ordering = ['-title']
+    def get_absolute_url(self):
+        """
+            we must have a get_absolute_url() function because 
+            PackageCreateView search for it in this Model, 
+            so it can redirect to the given url after creating Object.
+        :return: Package url.
+        """
+        # TODO : Fix this later.
+        return '/'

@@ -3,41 +3,48 @@
 {% block content %}
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2 well">
-            <form class="form-horizontal">
-              <fieldset>
-                <p class="lead">Create a new package.</p>
-                <div class="form-group">
-                  <label for="id_title" class="col-lg-2 control-label">Title</label>
-                  <div class="col-lg-10">
-                      {{ form.title }}
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="id_description" class="col-lg-2 control-label">Textarea</label>
-                  <div class="col-lg-10">
-                      {{ form.description }}
-                    <span class="help-block">{{ form.description.help_text }}</span>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="id_price" class="col-lg-2 control-label">Price</label>
-                  <div class="col-lg-10">
-                      {{ form.price }}
-                  </div>
-                </div>
-                <div class="form-group">
-                    <label for="id_category" class="col-lg-2 control-label">Selects</label>
-                    <div class="col-lg-10">
-                        {{ form.category }}
+            <form class="form-horizontal" method="post">{% csrf_token %}
+                <fieldset>
+                    <p class="lead">Create a new package.</p>
+                    <p>{{ form.non_field_errors }}</p>
+                    <div class="form-group">
+                      <label for="id_partner" class="col-lg-2 control-label">Title</label>
+                      <div class="col-lg-10">
+                          {{ form.partner }}
+                      </div>
                     </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-lg-10 col-lg-offset-2">
-                    <button type="reset" class="btn btn-default">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </div>
-                </div>
-              </fieldset>
+                    <div class="form-group">
+                      <label for="id_title" class="col-lg-2 control-label">Title</label>
+                      <div class="col-lg-10">
+                          {{ form.title }}
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="id_description" class="col-lg-2 control-label">Textarea</label>
+                      <div class="col-lg-10">
+                          {{ form.description }}
+                        <span class="help-block">{{ form.description.help_text }}</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="id_price" class="col-lg-2 control-label">Price</label>
+                      <div class="col-lg-10">
+                          {{ form.price }}
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_category" class="col-lg-2 control-label">Selects</label>
+                        <div class="col-lg-10">
+                            {{ form.category }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-10 col-lg-offset-2">
+                        <button type="reset" class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                </fieldset>
             </form>
         </div>
     </div>
