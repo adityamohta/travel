@@ -6,12 +6,12 @@ blog/migrations/
 contactus/migrations/
 feedback/migrations/
 newsletter/migrations/
-products/migrations/
+packages/migrations/
 accounts/__pycache__/
 blog/__pycache__/
 contactus/__pycache__/
 feedback/__pycache__/
 newsletter/__pycache__/
-products/__pycache__/
+packages/__pycache__/
 db.sqlite3
 travel/settings/local.py

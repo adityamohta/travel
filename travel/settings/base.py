@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'contactus',
     'feedback',
     'newsletter',
-    'products',
+    'packages',
 ]
 
 MIDDLEWARE = [
