@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px){
+    body > .navbar-transparent {
+        background-color: transparent;
+    }
+}
+body>.navbar {
+    margin-bottom: 21px;
+    border-radius: 0;
+    -webkit-transition: background-color .3s ease-in;
+    transition: background-color .3s ease-in;
+}
+.splash {
+    padding: 9em 0 7em;
+    background-color: #141D27;
+    background-image: url(/static/images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.section {
+    padding: 4em 0 4em;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
