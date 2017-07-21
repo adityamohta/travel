@@ -56,8 +56,8 @@ mkdir /feedback/migrations
 touch /feedback/migrations/__init__.py
 mkdir /newsletter/migrations
 touch /newsletter/migrations/__init__.py
-mkdir /products/migrations
-touch /products/migrations/__init__.py
+mkdir /packages/migrations
+touch /packages/migrations/__init__.py
 ```
 
 4) Make Migrations and then run Migrate.
