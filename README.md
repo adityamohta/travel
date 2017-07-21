@@ -46,18 +46,18 @@ DATABASES = {
 
 * pwd - /webapps/travel_app/travel/
 ```commandline
-mkdir /accounts/migrations
-touch /accounts/migrations/__init__.py
-mkdir /blog/migrations
-touch /blog/migrations/__init__.py
-mkdir /contactus/migrations
-touch /contactus/migrations/__init__.py
-mkdir /feedback/migrations
-touch /feedback/migrations/__init__.py
-mkdir /newsletter/migrations
-touch /newsletter/migrations/__init__.py
-mkdir /products/migrations
-touch /products/migrations/__init__.py
+mkdir accounts/migrations
+touch accounts/migrations/__init__.py
+mkdir blog/migrations
+touch blog/migrations/__init__.py
+mkdir contactus/migrations
+touch contactus/migrations/__init__.py
+mkdir feedback/migrations
+touch feedback/migrations/__init__.py
+mkdir newsletter/migrations
+touch newsletter/migrations/__init__.py
+mkdir packages/migrations
+touch packages/migrations/__init__.py
 ```
 
 4) Make Migrations and then run Migrate.
